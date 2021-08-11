@@ -1,0 +1,11 @@
+<h1>All our flats</h1>
+
+<div class="cards mt-4">
+  <% @flats.each do |flat| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= plant.image_url %>')">
+      <h2><%= flat.name %></h2>
+      <p><%= flat.description %></p>
+      <p><%= flat.price %><p>
+    </div>
+  <% end %>
+</div>
